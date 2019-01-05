@@ -10,6 +10,7 @@ def main():
         print()
         exit(1)
 
+    # Read files and print
     file1 = open(sys.argv[1], 'r')
     file2 = open(sys.argv[2], 'r')
 
@@ -23,6 +24,7 @@ def main():
     print(list2)
     print()
 
+    # Compare strings between two files, case sensitive
     compare_case_sensitive = set(list1) & set(list2)
     print("Same strings (case sensitive) between file1 and file2 are:",end="")
     print(compare_case_sensitive)
@@ -32,7 +34,7 @@ def main():
     file2.close()
 
     # Do the whole process again, since the seeker in file1&2 already approaches EOF
-
+    # Now compare strings between two files, case insensitive
     file1 = open(sys.argv[1], 'r')
     file2 = open(sys.argv[2], 'r')
 

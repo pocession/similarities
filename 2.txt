@@ -1,0 +1,7 @@
+Dog
+Cat
+deer
+tuturle
+spider
+fox
+puppy
